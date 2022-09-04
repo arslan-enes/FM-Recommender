@@ -12,7 +12,8 @@ fm_managers = pd.read_csv('data/fm22managers.csv', low_memory=False)
 # Get rid of the empty characters in the column names
 for df in [fm20, fm21, fm22, fm_managers]:
     df.columns = df.columns.str.strip()
-    df.Club = df.Club.str.strip()
+    for col in df.columns:
+        df[col] = df[col].str.strip() if df[col].dtype == 'object' else df[col]
 
 # Drop managers with no club
 fm_managers = fm_managers[fm_managers['Club'].str.strip() != '']
@@ -20,14 +21,11 @@ fm_managers = fm_managers[fm_managers['Club'].str.strip() != '']
 # Merge the datasets into one
 fm_final = fm22.merge(fm21,
                       on='UID',
-                      how='outer',
+                      how='inner',
                       suffixes=('', '_21')).merge(fm20,
                                                   on='UID',
-                                                  how='outer',
-                                                  suffixes=('', '_20')).merge(fm_managers,
-                                                                              on='Club',
-                                                                              how='outer',
-                                                                              suffixes=('', '_manager'))
+                                                  how='inner',
+                                                  suffixes=('', '_20'))
 
 # Drop the columns that are duplicated
 fm_final.drop_duplicates(subset=['UID'], keep='first' ,inplace=True)
