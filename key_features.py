@@ -169,5 +169,4 @@ FW={'Complete Forward(Attack)': [[' OtB ', ' Tec ', ' Cmp ', ' Ant ', ' Hea ', '
   [' Pun ', ' Ref ', ' Com ', ' Aer ', ' Thr ', ' Han ', ' Ecc ', ' Kic ', ' Cmd ', ' 1v1 ', ' TRO ']]
 
 }
-dict["Sweeper Keeper(Defend)"]
 
