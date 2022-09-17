@@ -33,6 +33,10 @@ MID = {'Advanced Playmaker (Support)': [['Fir', 'Pas', 'Tec', 'Cmp', 'Dec', 'OtB
                                          ['Mar', 'Pas', 'Agg', 'Cmp', 'Dec', 'Wor', 'Sta', 'Str']],
        'Defensive Midfielder (Support)': [['Tck', 'Ant', 'Cnt', 'Pos', 'Tea'],
                                           ['Mar', 'Pas', 'Agg', 'Cmp', 'Dec', 'Wor', 'Sta', 'Str']],
+       'Defensive Winger (Defend)' :[['OtB', 'Tec','Tea','Pos','Ant','Sta','Wor'],
+                                          ['Agg','Tck','Cro','Mar','Cnt','Dec','Fir','Acc','Dri']],
+       'Defensive Winger (Support)':[['OtB', 'Tec','Tea','Cro','Sta','Wor']],
+                                          ['Agg','Tck','Cmp','Pos','Pas','Ant','Mar','Cnt','Dec','Fir','Acc','Dri']]
        'Enganche (Support)': [['Fir', 'Pas', 'Tec', 'Cmp', 'Dec', 'Vis'],
                               ['Dri', 'Ant', 'Fla', 'OtB', 'Tea', 'Agi']],
        'Half Back (Defend)': [['Mar', 'Tck', 'Ant', 'Cmp', 'Cnt', 'Dec', 'Pos', 'Tea'],
@@ -206,3 +210,75 @@ DEF = {"Ball Playing Defender (Defender)": [[" Jum ", " Tck ", " Cmp ", " Pos ",
        "Inverted Wing-Back (Automatic)": [[' OtB ', ' Tck ', ' Tea ', ' Pas ', ' Mar ', ' Dec ', ' Sta ', ' Wor '],
                                          [' Tec ', ' Cmp ', ' Pos ', ' Ant ', ' Cnt ', ' Fir ', ' Acc ', ' Dri ', ' Agi ']]
        }
+
+
+
+GK = ['Sweeper Keeper (Defend)', 'Sweeper Keeper (Support)', 'Sweeper Keeper (Attack)',
+'Goalkeeper (Defend)']
+
+
+DRL = ["No-Nonsense Full-Back (Defend)",
+"Full-Back (Defend)", "Full-Back (Support)", "Full-Back (Attack)", "Full-Back (Automatic)",
+"Wing-Back (Defend)", "Wing-Back (Support)", "Wing-Back (Attack)", "Wing-Back (Automatic)",
+"Complete Wing-Back (Support)", "Complete Wing-Back (Attack)",
+"Inverted Wing-Back (Defend)", "Inverted Wing-Back (Support)", "Inverted Wing-Back (Attack)", "Inverted Wing-Back (Automatic)"]
+
+WRL = ["Wing-Back (Defend)", "Wing-Back (Support)", "Wing-Back (Attack)", "Wing-Back (Automatic)",
+"Inverted Wing-Back (Defend)", "Inverted Wing-Back (Support)", "Inverted Wing-Back (Attack)", "Inverted Wing-Back (Automatic)",
+"Complete Wing-Back (Support)", "Complete Wing-Back (Attack)"]
+
+
+DC = ["No-Nonsense Centre-Back (Defend)", "No-Nonsense Centre-Back (Stopper)", "No-Nonsense Centre-Back (Cover)",
+"Ball Playing Defender (Defender)", "Ball Playing Defender (Stopper)", "Ball Playing Defender (Cover)",
+"Libero (Support)", "Libero (Attack)",
+"Central Defender (Defend)", "Central Defender (Stopper)", "Central Defender (Cover)",
+"Wide Center-Back (Defend)", "Wide Center-Back (Support)", "Wide Center-Back (Attack)"]
+
+DMC = ['Anchor (Defend)',
+'Ball Winning Midfielder (Defend)', 'Ball Winning Midfielder (Support)',
+'Half Back (Defend)',
+'Deep Lying Playmaker (Defend)', 'Deep Lying Playmaker (Support)',
+'Defensive Midfielder (Defend)', 'Defensive Midfielder (Support)',
+'Segundo Volante (Support)', 'Segundo Volante (Attack)',
+'Roaming Playmaker (Support)',
+'Regista (Support)']
+
+
+MC = ['Ball Winning Midfielder (Defend)', 'Ball Winning Midfielder (Support)',
+'Central Midfielder (Defend)', 'Central Midfielder (Support)', 'Central Midfielder (Attack)',
+'Mezzala (Support)', 'Mezzala (Attack)',
+'Deep Lying Playmaker (Defend)', 'Deep Lying Playmaker (Support)',
+'Box to Box Midfielder (Support)',
+'Carillero (Support)',
+'Advanced Playmaker (Support)', 'Advanced Playmaker (Attack)',
+'Roaming Playmaker (Support)']
+
+AMC = ['Attacking Midfielder (Support)', 'Attacking Midfielder (Attack)',
+'Shadow Striker (Attack)',
+'Enganche (Support)',
+'Trequartista (Attack)',
+'Advanced Playmaker (Support)', 'Advanced Playmaker (Attack)',]
+
+
+MRL = ['Inverted Winger (Support)', 'Inverted Winger (Attack)',
+'Wide Playmaker (Support)', 'Wide Playmaker (Attack)',
+'Wide Midfielder (Defend)', 'Wide Midfielder (Support)', 'Wide Midfielder (Attack)'
+'Defensive Winger (Defend)', 'Defensive Winger (Support)'
+'Winger (Support)', 'Winger (Attack)']
+
+AMRL = ['Inverted Winger (Support)', 'Inverted Winger (Attack)',
+'Advanced Playmaker (Support)', 'Advanced Playmaker (Attack)',
+'Raumdeuter (Support)',
+'Inside Forward (Support)', 'Inside Forward (Attack)',
+'Winger (Support)', 'Winger (Attack)',
+'Wide Target Forward (Support)', 'Wide Target Forward (Attack)',
+'Trequartista (Attack)']
+
+FC = ['Complete Forward (Attack)', "Complete Forward (Support)",
+'Target Forward (Support)', 'Target Forward (Attack)',
+'Pressing Forward (Defend)', 'Pressing Forward (Support)', 'Pressing Forward (Attack)'
+'Deep Lying Forward (Support)', 'Deep Lying Forward (Attack)',
+'Poacher (Attack)',
+'Advanced Forward (Attack)',
+'Trequartista (Attack)',
+'False Nine (Support)']
