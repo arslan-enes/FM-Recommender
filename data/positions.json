@@ -1,0 +1,1834 @@
+{
+  "GK": {
+    "Sweeper Keeper (Defend)": {
+      "key": [
+        "Ref",
+        "Pos",
+        "Ant",
+        "Cnt",
+        "Kic",
+        "Agi",
+        "Cmd",
+        "1v1"
+      ],
+      "preferred": [
+        "Vis",
+        "Cmp",
+        "Pas",
+        "Dec",
+        "Fir",
+        "Com",
+        "Acc",
+        "Aer",
+        "Thr",
+        "Han",
+        "TRO"
+      ]
+    },
+    "Sweeper Keeper (Support)": {
+      "key": [
+        "Cmp",
+        "Ref",
+        "Pos",
+        "Ant",
+        "Cnt",
+        "Kic",
+        "Agi",
+        "Cmd",
+        "1v1",
+        "TRO"
+      ],
+      "preferred": [
+        "Vis",
+        "Pas",
+        "Dec",
+        "Fir",
+        "Com",
+        "Acc",
+        "Aer",
+        "Thr",
+        "Han"
+      ]
+    },
+    "Sweeper Keeper (Attack)": {
+      "key": [
+        "Cmp",
+        "Ref",
+        "Pos",
+        "Ant",
+        "Cnt",
+        "Kic",
+        "Agi",
+        "Cmd",
+        "1v1",
+        "TRO"
+      ],
+      "preferred": [
+        "Vis",
+        "Pas",
+        "Dec",
+        "Fir",
+        "Com",
+        "Acc",
+        "Aer",
+        "Thr",
+        "Han",
+        "Ecc"
+      ]
+    },
+    "Goalkeeper (Defend)": {
+      "key": [
+        "Ref",
+        "Pos",
+        "Cnt",
+        "Com",
+        "Aer",
+        "Han",
+        "Kic",
+        "Agi",
+        "Cmd"
+      ],
+      "preferred": [
+        "Ant",
+        "Dec",
+        "Thr",
+        "1v1"
+      ]
+    }
+  },
+  "DEF": {
+    "Ball Playing Defender (Defender)": {
+      "key": [
+        "Jum",
+        "Tck",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Mar",
+        "Hea",
+        "Str"
+      ],
+      "preferred": [
+        "Agg",
+        "Vis",
+        "Tec",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Pac",
+        "Bra"
+      ]
+    },
+    "Ball Playing Defender (Stopper)": {
+      "key": [
+        "Agg",
+        "Jum",
+        "Tck",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Dec",
+        "Hea",
+        "Str",
+        "Bra"
+      ],
+      "preferred": [
+        "Vis",
+        "Tec",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Fir"
+      ]
+    },
+    "Ball Playing Defender (Cover)": {
+      "key": [
+        "Tck",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Pac"
+      ],
+      "preferred": [
+        "Jum",
+        "Vis",
+        "Tec",
+        "Hea",
+        "Fir",
+        "Str",
+        "Bra"
+      ]
+    },
+    "No-Nonsense Centre-Back (Defend)": {
+      "key": [
+        "Jum",
+        "Tck",
+        "Pos",
+        "Mar",
+        "Hea",
+        "Str"
+      ],
+      "preferred": [
+        "Agg",
+        "Ant",
+        "Cnt",
+        "Pac",
+        "Bra"
+      ]
+    },
+    "No-Nonsense Centre-Back (Stopper)": {
+      "key": [
+        "Agg",
+        "Jum",
+        "Tck",
+        "Pos",
+        "Hea",
+        "Str",
+        "Bra"
+      ],
+      "preferred": [
+        "Ant",
+        "Mar",
+        "Cnt"
+      ]
+    },
+    "No-Nonsense Centre-Back (Cover)": {
+      "key": [
+        "Tck",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Pac"
+      ],
+      "preferred": [
+        "Jum",
+        "Hea",
+        "Str",
+        "Bra"
+      ]
+    },
+    "Wide Center-Back (Defend)": {
+      "key": [
+        "Jum",
+        "Tck",
+        "Pos",
+        "Cro",
+        "Mar",
+        "Hea",
+        "Str",
+        "Sta"
+      ],
+      "preferred": [
+        "Agg",
+        "Cmp",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Pac",
+        "Dri",
+        "Wor",
+        "Bra"
+      ]
+    },
+    "Wide Center-Back (Support)": {
+      "key": [
+        "Jum",
+        "Tck",
+        "Pos",
+        "Cro",
+        "Mar",
+        "Hea",
+        "Pac",
+        "Str",
+        "Dri",
+        "Sta"
+      ],
+      "preferred": [
+        "Agg",
+        "OtB",
+        "Cmp",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Wor",
+        "Bra"
+      ]
+    },
+    "Wide Center-Back (Attack)": {
+      "key": [
+        "Jum",
+        "OtB",
+        "Tck",
+        "Cro",
+        "Mar",
+        "Hea",
+        "Pac",
+        "Str",
+        "Dri",
+        "Sta"
+      ],
+      "preferred": [
+        "Agg",
+        "Cmp",
+        "Pos",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Wor",
+        "Bra"
+      ]
+    },
+    "Libero (Support)": {
+      "key": [
+        "Vis",
+        "Tck",
+        "Tea",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Pac"
+      ],
+      "preferred": [
+        "Jum",
+        "Tec",
+        "Fla",
+        "Hea",
+        "Str",
+        "Dri",
+        "Bal",
+        "Sta",
+        "Agi",
+        "Bra"
+      ]
+    },
+    "Libero (Attack)": {
+      "key": [
+        "Vis",
+        "Tck",
+        "Tea",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Fla",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Pac",
+        "Dri"
+      ],
+      "preferred": [
+        "Jum",
+        "Lon",
+        "Tec",
+        "Hea",
+        "Acc",
+        "Str",
+        "Bal",
+        "Sta",
+        "Agi",
+        "Bra"
+      ]
+    },
+    "Central Defender (Defend)": {
+      "key": [
+        "Jum",
+        "Tck",
+        "Pos",
+        "Mar",
+        "Hea",
+        "Str"
+      ],
+      "preferred": [
+        "Agg",
+        "Cmp",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Pac",
+        "Bra"
+      ]
+    },
+    "Central Defender (Stopper)": {
+      "key": [
+        "Agg",
+        "Jum",
+        "Tck",
+        "Pos",
+        "Dec",
+        "Hea",
+        "Str",
+        "Bra"
+      ],
+      "preferred": [
+        "Cmp",
+        "Ant",
+        "Mar",
+        "Cnt"
+      ]
+    },
+    "Central Defender (Cover)": {
+      "key": [
+        "Tck",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Pac"
+      ],
+      "preferred": [
+        "Jum",
+        "Cmp",
+        "Hea",
+        "Str",
+        "Bra"
+      ]
+    },
+    "Full-Back (Defend)": {
+      "key": [
+        "Tck",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Cnt"
+      ],
+      "preferred": [
+        "Tea",
+        "Cmp",
+        "Pas",
+        "Cro",
+        "Dec",
+        "Pac",
+        "Sta"
+      ]
+    },
+    "Full-Back (Support)": {
+      "key": [
+        "Tck",
+        "Tea",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Wor"
+      ],
+      "preferred": [
+        "Tec",
+        "Cmp",
+        "Pas",
+        "Cro",
+        "Dec",
+        "Pac",
+        "Dri",
+        "Sta"
+      ]
+    },
+    "Full-Back (Attack)": {
+      "key": [
+        "Tck",
+        "Tea",
+        "Pos",
+        "Ant",
+        "Cro",
+        "Pac",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "OtB",
+        "Tec",
+        "Cmp",
+        "Pas",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri",
+        "Agi"
+      ]
+    },
+    "Full-Back (Automatic)": {
+      "key": [
+        "Tck",
+        "Tea",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Wor"
+      ],
+      "preferred": [
+        "Tec",
+        "Cmp",
+        "Pas",
+        "Cro",
+        "Dec",
+        "Pac",
+        "Dri",
+        "Sta"
+      ]
+    },
+    "Wing-Back (Defend)": {
+      "key": [
+        "Tck",
+        "Tea",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Acc",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "OtB",
+        "Tec",
+        "Pas",
+        "Cro",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Pac",
+        "Dri",
+        "Agi"
+      ]
+    },
+    "Wing-Back (Support)": {
+      "key": [
+        "OtB",
+        "Tck",
+        "Tea",
+        "Cro",
+        "Mar",
+        "Acc",
+        "Dri",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Tec",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Pac",
+        "Agi"
+      ]
+    },
+    "Wing-Back (Attack)": {
+      "key": [
+        "OtB",
+        "Tck",
+        "Tec",
+        "Tea",
+        "Cro",
+        "Acc",
+        "Pac",
+        "Dri",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Pos",
+        "Pas",
+        "Fla",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Agi"
+      ]
+    },
+    "Wing-Back (Automatic)": {
+      "key": [
+        "OtB",
+        "Tck",
+        "Tea",
+        "Cro",
+        "Mar",
+        "Acc",
+        "Dri",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Tec",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Pac",
+        "Agi"
+      ]
+    },
+    "No-Nonsense Full-Back (Defend)": {
+      "key": [
+        "Tck",
+        "Pos",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Str"
+      ],
+      "preferred": [
+        "Agg",
+        "Tea",
+        "Hea",
+        "Bra"
+      ]
+    },
+    "Complete Wing-Back (Support)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Pas",
+        "Cro",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Pac",
+        "Dri",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Tck",
+        "Cmp",
+        "Fla",
+        "Ant",
+        "Bal",
+        "Agi"
+      ]
+    },
+    "Complete Wing-Back (Attack)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Pas",
+        "Fla",
+        "Cro",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Pac",
+        "Dri",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Tck",
+        "Cmp",
+        "Ant",
+        "Bal",
+        "Agi"
+      ]
+    },
+    "Inverted Wing-Back (Defend)": {
+      "key": [
+        "Tck",
+        "Tea",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Mar",
+        "Dec",
+        "Wor"
+      ],
+      "preferred": [
+        "OtB",
+        "Tec",
+        "Cnt",
+        "Fir",
+        "Acc",
+        "Dri",
+        "Sta",
+        "Agi"
+      ]
+    },
+    "Inverted Wing-Back (Support)": {
+      "key": [
+        "OtB",
+        "Tck",
+        "Tea",
+        "Pas",
+        "Mar",
+        "Dec",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Tec",
+        "Cmp",
+        "Pos",
+        "Ant",
+        "Cnt",
+        "Fir",
+        "Acc",
+        "Dri",
+        "Agi"
+      ]
+    },
+    "Inverted Wing-Back (Attack)": {
+      "key": [
+        "OtB",
+        "Tck",
+        "Tec",
+        "Tea",
+        "Pas",
+        "Mar",
+        "Dec",
+        "Acc",
+        "Dri",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Lon",
+        "Cmp",
+        "Pos",
+        "Fla",
+        "Ant",
+        "Cnt",
+        "Fir",
+        "Pac",
+        "Agi"
+      ]
+    },
+    "Inverted Wing-Back (Automatic)": {
+      "key": [
+        "OtB",
+        "Tck",
+        "Tea",
+        "Pas",
+        "Mar",
+        "Dec",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Tec",
+        "Cmp",
+        "Pos",
+        "Ant",
+        "Cnt",
+        "Fir",
+        "Acc",
+        "Dri",
+        "Agi"
+      ]
+    }
+  },
+  "MID": {
+    "Advanced Playmaker (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "OtB",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Dri",
+        "Ant",
+        "Fla",
+        "Agi"
+      ]
+    },
+    "Advanced Playmaker (Attack)": {
+      "key": [
+        "Dri",
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "OtB",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Ant",
+        "Fla",
+        "Agi",
+        "Acc"
+      ]
+    },
+    "Anchor (Defend)": {
+      "key": [
+        "Mar",
+        "Tck",
+        "Ant",
+        "Cnt",
+        "Dec",
+        "Pos"
+      ],
+      "preferred": [
+        "Cmp",
+        "Tea",
+        "Str"
+      ]
+    },
+    "Attacking Midfielder (Support)": {
+      "key": [
+        "Fir",
+        "Lon",
+        "Pas",
+        "Tec",
+        "Ant",
+        "Dec",
+        "Fla",
+        "OtB"
+      ],
+      "preferred": [
+        "Dri",
+        "Cmp",
+        "Vis",
+        "Agi"
+      ]
+    },
+    "Attacking Midfielder (Attack)": {
+      "key": [
+        "Dri",
+        "Fir",
+        "Lon",
+        "Pas",
+        "Tec",
+        "Ant",
+        "Dec",
+        "Fla",
+        "OtB"
+      ],
+      "preferred": [
+        "Fin",
+        "Cmp",
+        "Vis",
+        "Agi"
+      ]
+    },
+    "Ball Winning Midfielder (Defend)": {
+      "key": [
+        "Tck",
+        "Agg",
+        "Ant",
+        "Tea",
+        "Wor",
+        "Sta"
+      ],
+      "preferred": [
+        "Mar",
+        "Bra",
+        "Cnt",
+        "Pos",
+        "Agi",
+        "Pac",
+        "Str"
+      ]
+    },
+    "Ball Winning Midfielder (Support)": {
+      "key": [
+        "Tck",
+        "Agg",
+        "Ant",
+        "Tea",
+        "Wor",
+        "Sta"
+      ],
+      "preferred": [
+        "Mar",
+        "Pas",
+        "Bra",
+        "Cnt",
+        "Agi",
+        "Pac",
+        "Str"
+      ]
+    },
+    "Box to Box Midfielder (Support)": {
+      "key": [
+        "Pas",
+        "Tck",
+        "OtB",
+        "Tea",
+        "Wor",
+        "Sta"
+      ],
+      "preferred": [
+        "Dri",
+        "Fin",
+        "Fir",
+        "Lon",
+        "Tec",
+        "Agg",
+        "Ant",
+        "Cmp",
+        "Dec",
+        "Pos",
+        "Acc",
+        "Bal",
+        "Pac",
+        "Str"
+      ]
+    },
+    "Carrilero (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tck",
+        "Dec",
+        "Pos",
+        "Tea",
+        "Sta"
+      ],
+      "preferred": [
+        "Tec",
+        "Ant",
+        "Cmp",
+        "Cnt",
+        "OtB",
+        "Vis",
+        "Wor"
+      ]
+    },
+    "Central Midfielder (Defend)": {
+      "key": [
+        "Tck",
+        "Cnt",
+        "Dec",
+        "Pos",
+        "Tea"
+      ],
+      "preferred": [
+        "Fir",
+        "Mar",
+        "Pas",
+        "Tec",
+        "Agg",
+        "Ant",
+        "Cmp",
+        "Wor",
+        "Sta"
+      ]
+    },
+    "Central Midfielder (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tck",
+        "Dec",
+        "Tea"
+      ],
+      "preferred": [
+        "Tec",
+        "Ant",
+        "Cmp",
+        "Cnt",
+        "OtB",
+        "Vis",
+        "Wor",
+        "Sta"
+      ]
+    },
+    "Central Midfielder (Attack)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Dec",
+        "OtB"
+      ],
+      "preferred": [
+        "Lon",
+        "Tck",
+        "Tec",
+        "Ant",
+        "Cmp",
+        "Tea",
+        "Vis",
+        "Wor",
+        "Acc",
+        "Sta"
+      ]
+    },
+    "Deep Lying Playmaker (Defend)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Tck",
+        "Ant",
+        "Pos",
+        "Bal"
+      ]
+    },
+    "Deep Lying Playmaker (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Ant",
+        "OtB",
+        "Pos",
+        "Bal"
+      ]
+    },
+    "Defensive Midfielder (Defend)": {
+      "key": [
+        "Tck",
+        "Ant",
+        "Cnt",
+        "Pos",
+        "Tea"
+      ],
+      "preferred": [
+        "Mar",
+        "Pas",
+        "Agg",
+        "Cmp",
+        "Dec",
+        "Wor",
+        "Sta",
+        "Str"
+      ]
+    },
+    "Defensive Midfielder (Support)": {
+      "key": [
+        "Tck",
+        "Ant",
+        "Cnt",
+        "Pos",
+        "Tea"
+      ],
+      "preferred": [
+        "Mar",
+        "Pas",
+        "Agg",
+        "Cmp",
+        "Dec",
+        "Wor",
+        "Sta",
+        "Str"
+      ]
+    },
+    "Defensive Winger (Defend)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Pos",
+        "Ant",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Agg",
+        "Tck",
+        "Cro",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri"
+      ]
+    },
+    "Defensive Winger (Support)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Cro",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Agg",
+        "Tck",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri"
+      ]
+    },
+    "Enganche (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "Vis"
+      ],
+      "preferred": [
+        "Dri",
+        "Ant",
+        "Fla",
+        "OtB",
+        "Tea",
+        "Agi"
+      ]
+    },
+    "Half Back (Defend)": {
+      "key": [
+        "Mar",
+        "Tck",
+        "Ant",
+        "Cmp",
+        "Cnt",
+        "Dec",
+        "Pos",
+        "Tea"
+      ],
+      "preferred": [
+        "Fir",
+        "Pas",
+        "Agg",
+        "Bra",
+        "Wor",
+        "Jum",
+        "Sta",
+        "Str"
+      ]
+    },
+    "Inside Forward (Support)": {
+      "key": [
+        "Dri",
+        "Fir",
+        "Pas",
+        "Tec",
+        "OtB",
+        "Acc",
+        "Agi",
+        "Bal"
+      ],
+      "preferred": [
+        "Fin",
+        "Lon",
+        "Ant",
+        "Cmp",
+        "Fla",
+        "Vis",
+        "Pac"
+      ]
+    },
+    "Inside Forward (Attack)": {
+      "key": [
+        "Dri",
+        "Fin",
+        "Fir",
+        "Tec",
+        "OtB",
+        "Acc",
+        "Agi",
+        "Bal"
+      ],
+      "preferred": [
+        "Lon",
+        "Pas",
+        "Ant",
+        "Cmp",
+        "Fla",
+        "Pac"
+      ]
+    },
+    "Inverted Winger (Support)": {
+      "key": [
+        "Dri",
+        "Pas",
+        "Tec",
+        "OtB",
+        "Acc"
+      ],
+      "preferred": [
+        "Cro",
+        "Fir",
+        "Lon",
+        "Cmp",
+        "Dec",
+        "Vis",
+        "Wor",
+        "Agi",
+        "Pac",
+        "Sta"
+      ]
+    },
+    "Inverted Winger (Attack)": {
+      "key": [
+        "Dri",
+        "Pas",
+        "Tec",
+        "OtB",
+        "Acc",
+        "Agi"
+      ],
+      "preferred": [
+        "Cro",
+        "Fir",
+        "Lon",
+        "Ant",
+        "Cmp",
+        "Dec",
+        "Fla",
+        "Vis",
+        "Pac"
+      ]
+    },
+    "Mezzala (Support)": {
+      "key": [
+        "Pas",
+        "Tec",
+        "Dec",
+        "OtB",
+        "Wor",
+        "Acc"
+      ],
+      "preferred": [
+        "Dri",
+        "Fir",
+        "Lon",
+        "Tck",
+        "Ant",
+        "Cmp",
+        "Vis",
+        "Bal",
+        "Sta"
+      ]
+    },
+    "Mezzala (Attack)": {
+      "key": [
+        "Dri",
+        "Pas",
+        "Tec",
+        "Dec",
+        "OtB",
+        "Vis",
+        "Wor",
+        "Acc"
+      ],
+      "preferred": [
+        "Fin",
+        "Fir",
+        "Lon",
+        "Ant",
+        "Cmp",
+        "Fla",
+        "Bal",
+        "Sta"
+      ]
+    },
+    "Raumdeuter (Support)": {
+      "key": [
+        "Fin",
+        "Ant",
+        "Cmp",
+        "Cnt",
+        "Dec",
+        "OtB",
+        "Bal"
+      ],
+      "preferred": [
+        "Fir",
+        "Tec",
+        "Wor",
+        "Acc",
+        "Sta"
+      ]
+    },
+    "Regista (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "Fla",
+        "OtB",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Dri",
+        "Lon",
+        "Ant",
+        "Bal"
+      ]
+    },
+    "Roaming Playmaker (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Ant",
+        "Cmp",
+        "Dec",
+        "OtB",
+        "Tea",
+        "Vis",
+        "Wor",
+        "Acc",
+        "Sta"
+      ],
+      "preferred": [
+        "Dri",
+        "Lon",
+        "Cnt",
+        "Pos",
+        "Agi",
+        "Bal",
+        "Pac"
+      ]
+    },
+    "Segundo Volante (Support)": {
+      "key": [
+        "Mar",
+        "Pas",
+        "Tck",
+        "OtB",
+        "Pos",
+        "Wor",
+        "Pac",
+        "Sta"
+      ],
+      "preferred": [
+        "Fin",
+        "Fir",
+        "Lon",
+        "Ant",
+        "Cmp",
+        "Cnt",
+        "Dec",
+        "Acc",
+        "Bal",
+        "Str"
+      ]
+    },
+    "Segundo Volante (Attack)": {
+      "key": [
+        "Fin",
+        "Lon",
+        "Pas",
+        "Tck",
+        "Ant",
+        "OtB",
+        "Pos",
+        "Wor",
+        "Pac",
+        "Sta"
+      ],
+      "preferred": [
+        "Fir",
+        "Mar",
+        "Cmp",
+        "Cnt",
+        "Dec",
+        "Acc",
+        "Bal",
+        "Str"
+      ]
+    },
+    "Shadow Striker (Attack)": {
+      "key": [
+        "Dri",
+        "Fin",
+        "Fir",
+        "Ant",
+        "Cmp",
+        "OtB",
+        "Acc"
+      ],
+      "preferred": [
+        "Pas",
+        "Tec",
+        "Cnt",
+        "Dec",
+        "Wor",
+        "Agi",
+        "Bal",
+        "Pac",
+        "Sta"
+      ]
+    },
+    "Wide Midfielder (Defend)": {
+      "key": [
+        "Pas",
+        "Tck",
+        "Cnt",
+        "Dec",
+        "Pos",
+        "Tea",
+        "Wor"
+      ],
+      "preferred": [
+        "Cro",
+        "Fir",
+        "Mar",
+        "Tec",
+        "Ant",
+        "Cmp",
+        "Sta"
+      ]
+    },
+    "Wide Midfielder (Support)": {
+      "key": [
+        "Pas",
+        "Tck",
+        "Dec",
+        "Tea",
+        "Wor",
+        "Sta"
+      ],
+      "preferred": [
+        "Cro",
+        "Fir",
+        "Tec",
+        "Ant",
+        "Cmp",
+        "Cnt",
+        "OtB",
+        "Pos",
+        "Vis"
+      ]
+    },
+    "Wide Midfielder (Attack)": {
+      "key": [
+        "Cro",
+        "Fir",
+        "Pas",
+        "Dec",
+        "Tea",
+        "Wor",
+        "Sta"
+      ],
+      "preferred": [
+        "Tck",
+        "Tec",
+        "Ant",
+        "Cmp",
+        "OtB",
+        "Vis"
+      ]
+    },
+    "Wide Playmaker (Support)": {
+      "key": [
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Dri",
+        "OtB",
+        "Agi"
+      ]
+    },
+    "Wide Playmaker (Attack)": {
+      "key": [
+        "Dri",
+        "Fir",
+        "Pas",
+        "Tec",
+        "Cmp",
+        "Dec",
+        "OtB",
+        "Tea",
+        "Vis"
+      ],
+      "preferred": [
+        "Ant",
+        "Fla",
+        "Acc",
+        "Agi"
+      ]
+    },
+    "Wide Target Forward (Support)": {
+      "key": [
+        "Hea",
+        "Bra",
+        "Tea",
+        "Jum",
+        "Str"
+      ],
+      "preferred": [
+        "Cro",
+        "Fir",
+        "Ant",
+        "OtB",
+        "Wor",
+        "Bal",
+        "Sta"
+      ]
+    },
+    "Wide Target Forward (Attack)": {
+      "key": [
+        "Hea",
+        "Bra",
+        "OtB",
+        "Jum",
+        "Str"
+      ],
+      "preferred": [
+        "Cro",
+        "Fin",
+        "Fir",
+        "Ant",
+        "Tea",
+        "Wor",
+        "Bal",
+        "Sta"
+      ]
+    },
+    "Winger (Support)": {
+      "key": [
+        "Cro",
+        "Dri",
+        "Tec",
+        "OtB",
+        "Acc",
+        "Pac"
+      ],
+      "preferred": [
+        "Fir",
+        "Pas",
+        "Wor",
+        "Agi",
+        "Sta"
+      ]
+    },
+    "Winger (Attack)": {
+      "key": [
+        "Cro",
+        "Dri",
+        "Tec",
+        "OtB",
+        "Acc",
+        "Pac"
+      ],
+      "preferred": [
+        "Fir",
+        "Pas",
+        "Ant",
+        "Fla",
+        "Agi"
+      ]
+    }
+  },
+  "FW": {
+    "Complete Forward (Attack)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Cmp",
+        "Ant",
+        "Hea",
+        "Fir",
+        "Acc",
+        "Str",
+        "Dri",
+        "Agi",
+        "Fin"
+      ],
+      "preferred": [
+        "Jum",
+        "Vis",
+        "Lon",
+        "Tea",
+        "Pas",
+        "Dec",
+        "Pac",
+        "Bal",
+        "Sta",
+        "Wor"
+      ]
+    },
+    "Complete Forward (Support)": {
+      "key": [
+        "Vis",
+        "Lon",
+        "OtB",
+        "Tec",
+        "Cmp",
+        "Pas",
+        "Ant",
+        "Dec",
+        "Hea",
+        "Fir",
+        "Acc",
+        "Str",
+        "Dri",
+        "Agi"
+      ],
+      "preferred": [
+        "Jum",
+        "Tea",
+        "Pac",
+        "Bal",
+        "Sta",
+        "Wor",
+        "Fin"
+      ]
+    },
+    "Target Forward (Support)": {
+      "key": [
+        "Jum",
+        "Tea",
+        "Hea",
+        "Str",
+        "Bal",
+        "Bra"
+      ],
+      "preferred": [
+        "Agg",
+        "OtB",
+        "Cmp",
+        "Ant",
+        "Dec",
+        "Fir",
+        "Fin"
+      ]
+    },
+    "Target Forward (Attack)": {
+      "key": [
+        "Jum",
+        "OtB",
+        "Cmp",
+        "Hea",
+        "Str",
+        "Bal",
+        "Bra",
+        "Fin"
+      ],
+      "preferred": [
+        "Agg",
+        "Tea",
+        "Ant",
+        "Dec",
+        "Fir"
+      ]
+    },
+    "Pressing Forward (Defend)": {
+      "key": [
+        "Agg",
+        "Tea",
+        "Ant",
+        "Dec",
+        "Acc",
+        "Pac",
+        "Sta",
+        "Wor",
+        "Bra"
+      ],
+      "preferred": [
+        "Cmp",
+        "Cnt",
+        "Fir",
+        "Str",
+        "Bal",
+        "Agi"
+      ]
+    },
+    "Pressing Forward (Support)": {
+      "key": [
+        "Agg",
+        "Tea",
+        "Ant",
+        "Dec",
+        "Acc",
+        "Pac",
+        "Sta",
+        "Wor",
+        "Bra"
+      ],
+      "preferred": [
+        "OtB",
+        "Cmp",
+        "Pas",
+        "Cnt",
+        "Fir",
+        "Str",
+        "Bal",
+        "Agi"
+      ]
+    },
+    "Pressing Forward (Attack)": {
+      "key": [
+        "Agg",
+        "OtB",
+        "Tea",
+        "Ant",
+        "Acc",
+        "Pac",
+        "Sta",
+        "Wor",
+        "Bra"
+      ],
+      "preferred": [
+        "Cmp",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Str",
+        "Bal",
+        "Agi",
+        "Fin"
+      ]
+    },
+    "Deep Lying Forward (Support)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Cmp",
+        "Pas",
+        "Dec",
+        "Fir"
+      ],
+      "preferred": [
+        "Vis",
+        "Fla",
+        "Ant",
+        "Str",
+        "Bal",
+        "Fin"
+      ]
+    },
+    "Deep Lying Forward (Attack)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Cmp",
+        "Pas",
+        "Dec",
+        "Fir"
+      ],
+      "preferred": [
+        "Vis",
+        "Fla",
+        "Ant",
+        "Str",
+        "Dri",
+        "Bal",
+        "Fin"
+      ]
+    },
+    "Poacher (Attack)": {
+      "key": [
+        "OtB",
+        "Cmp",
+        "Ant",
+        "Fin"
+      ],
+      "preferred": [
+        "Tec",
+        "Dec",
+        "Hea",
+        "Fir",
+        "Acc"
+      ]
+    },
+    "Advanced Forward (Attack)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Cmp",
+        "Fir",
+        "Acc",
+        "Dri",
+        "Fin"
+      ],
+      "preferred": [
+        "Pas",
+        "Ant",
+        "Dec",
+        "Pac",
+        "Bal",
+        "Sta",
+        "Agi",
+        "Wor"
+      ]
+    },
+    "Trequartista (Attack)": {
+      "key": [
+        "Vis",
+        "OtB",
+        "Tec",
+        "Cmp",
+        "Pas",
+        "Fla",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri"
+      ],
+      "preferred": [
+        "Ant",
+        "Bal",
+        "Agi",
+        "Fin"
+      ]
+    },
+    "False Nine (Support)": {
+      "key": [
+        "Vis",
+        "OtB",
+        "Tec",
+        "Cmp",
+        "Pas",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri",
+        "Agi"
+      ],
+      "preferred": [
+        "Tea",
+        "Fla",
+        "Ant",
+        "Bal",
+        "Fin"
+      ]
+    }
+  }
+}
