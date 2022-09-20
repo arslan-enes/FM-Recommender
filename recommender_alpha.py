@@ -2,16 +2,15 @@ import pandas as pd
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', None)
 
+#
+# def get_data():
+#     pos = pd.read_csv('data/fmpos.csv')
+#     fm = pd.read_csv('data/fmrole (1).csv')
+#     scores = pd.read_csv('data/scores.csv')
+#     return pos, fm, scores
+#
 
-def get_data():
-    pos = pd.read_csv('data/fmpos.csv')
-    fm = pd.read_csv('data/fmrole (1).csv')
-    scores = pd.read_csv('data/scores.csv')
-    return pos, fm, scores
-
-
-def finder(age, wage, value, position, role, nat):
-    pos, fm, scores = get_data()
+def finder(age, wage, value, position, role, nat, fm, pos, scores):
     df = fm[fm['Age'] <= age]
     df = df[df['Wage'] <= wage]
     df = df[df['Transfer Value'] <= value * 1.3]

@@ -90,7 +90,7 @@ def main():
     get_result_button = input_container.button('Get Results')
 
     if get_result_button:
-        results_df = finder(selected_age, selected_wage, selected_value, selected_pos, selected_role, selected_nat).head(5)
+        results_df = finder(selected_age, selected_wage, selected_value, selected_pos, selected_role, selected_nat, fm, pos, scores).head(5)
         col1, col2, col3, col4, col5 = tab1.columns(5)
         cols = [col1, col2, col3, col4, col5]
         pos_atts = pos_json()
