@@ -4,28 +4,31 @@ pd.set_option('display.width', None)
 
 
 def get_data():
-    pos = pd.read_csv('data/deneme_ca2.csv')
-    fm = pd.read_csv('data/fm_new_positions.csv')
-    scores = pd.read_csv('data/scores_13092022.csv')
+    pos = pd.read_csv('data/fmpos.csv')
+    fm = pd.read_csv('data/fmrole (1).csv')
+    scores = pd.read_csv('data/scores.csv')
     return pos, fm, scores
 
 
-def finder(age, wage, value, position, role):
+def finder(age, wage, value, position, role, nat):
     pos, fm, scores = get_data()
     df = fm[fm['Age'] <= age]
     df = df[df['Wage'] <= wage]
     df = df[df['Transfer Value'] <= value * 1.3]
     df = df[df['Position'] == position]
+    if nat != 'All':
+        df = df[df['Nat'] == nat]
     after_filter_uids = df.UID
+    print(after_filter_uids)
     after_filter_scores = scores[scores['UID'].isin(after_filter_uids)]
     after_filter_position_scores = pos[pos['UID'].isin(after_filter_uids)]
     final_df = pd.DataFrame({'UID': after_filter_uids.values,
                              'Name': after_filter_scores['Name'],
                              'Position Score': after_filter_position_scores[position],
                              'Role Score': after_filter_scores[role],
-                             'Final Score': (after_filter_scores[role]*0.5) + (after_filter_position_scores[position]*0.5)})
+                             'Final Score': (after_filter_scores[role]*0.7) + (after_filter_position_scores[position]*0.3)})
     final_df = final_df.sort_values(by='Final Score', ascending=False)
-    #print(final_df.head(10))
+    print(final_df.head())
     return final_df
 
 
