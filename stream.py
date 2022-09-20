@@ -38,21 +38,9 @@ if 'analyze' not in st.session_state:
 
 @st.cache
 def get_data():
-    url = 'https://drive.google.com/file/d/1nMRz0ue-JJZUg6JNYVFH5qrZXyMu3wFe/view?usp=sharing'
-    file_id = url.split('/')[-2]
-    dwn_url = 'https://drive.google.com/uc?id=' + file_id
-    pos = pd.read_csv(dwn_url)
-
-    url = 'https://drive.google.com/file/d/10yvDacS4bJGYVg1K8Y0fGFt-9Io80vLT/view?usp=sharing'
-    file_id = url.split('/')[-2]
-    dwn_url = 'https://drive.google.com/uc?id=' + file_id
-    fm = pd.read_csv(dwn_url)
-
-    url = 'https://drive.google.com/file/d/1Dy8G-0ZYN2MzrT6CcE5QpBAsOevo1345/view?usp=sharing'
-    file_id = url.split('/')[-2]
-    dwn_url = 'https://drive.google.com/uc?id=' + file_id
-    scores = pd.read_csv(dwn_url)
-
+    pos = pd.read_csv('data/fmpos.csv')
+    fm = pd.read_csv('data/fmrole (1).csv')
+    scores = pd.read_csv('data/scores1.csv').merge(pd.read_csv('data/scores2.csv'), how='outer')
     return pos, fm, scores
 
 
