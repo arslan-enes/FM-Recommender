@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-from recommender_alpha import finder
-import base64
-from graphs import compareplayer, compareplayer_line
 import json
+import base64
+from recommender_alpha import finder
+from graphs import compareplayer, compareplayer_line
 from key_features import role_for_pos
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
@@ -95,7 +95,6 @@ def main():
                     img_path = 'https://media-exp1.licdn.com/dms/image/C4D03AQEAn5cOIWFO7Q/profile-displayphoto-shrink_800_800/0/1661549952564?e=1669248000&v=beta&t=9dRgksv0W9_EjtUrPOP87cMWCvRfqtbQB-BuNSEe_aE'
                 player_name = result[1]['Name']
                 player_all = fm[fm.UID == player_uid]
-                print(img_path)
                 cols[num].markdown(f"""
                             <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
                             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -121,11 +120,11 @@ def main():
     </tr>
     <tr>
       <th>Value </th>
-      <td colspan='3'>{"${:,}".format(int(player_all['Transfer Value'].values[0]))}</td>
+      <td colspan='3'>{"€{:,}".format(int(player_all['Transfer Value'].values[0]))}</td>
     </tr>
     <tr>
       <th>Wage</th>
-      <td colspan='3'>{"${:,} (p/y)".format(int(player_all['Wage'].values[0]))}</td>
+      <td colspan='3'>{"€{:,} (p/y)".format(int(player_all['Wage'].values[0]))}</td>
     </tr>
     <tr>
       <th>Age</th>
