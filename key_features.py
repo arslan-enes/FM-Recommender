@@ -281,4 +281,4 @@ SC = ['Complete Forward (Attack)', "Complete Forward (Support)",
 'Trequartista (Attack)',
 'False Nine (Support)']
 
-role_for_pos = {'SC':SC, 'AMRL':AMRL, 'AMC':AMC, 'MRL':MRL, 'MC':MC, 'DMC':DMC, 'DC':DC, 'WBRL':WBRL, 'DRL':DRL, 'GK':GK_}
+role_for_pos = {'SC':SC, 'AMRL':AMRL, 'AMC':AMC, 'MRL':MRL, 'MC':MC, 'DM':DMC, 'DC':DC, 'WBRL':WBRL, 'DRL':DRL, 'GK':GK_}
