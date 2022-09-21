@@ -184,9 +184,10 @@ def main():
                 st.session_state['results'] = False
 
         col1, col2 = tab2.columns(2)
-        col1.plotly_chart(compareplayer(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
-        col2.plotly_chart(compareplayer_line(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
-
+        if results_df.shape[0] == 5:
+            col1.plotly_chart(compareplayer(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
+            col2.plotly_chart(compareplayer_line(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
+        else: tab2.write('Not enough players to compare')
     tab3.plotly_chart(short_list_table(st.session_state['shortlist']), use_container_width=True)
 
 
