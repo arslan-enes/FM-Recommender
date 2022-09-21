@@ -12,13 +12,14 @@ pd.set_option('display.width', None)
 
 def finder(age, wage, value, position, role, nat, fm, pos, scores):
     df = fm[fm['Age'] <= age]
-    df = df[df['Wage'] <= wage]
-    df = df[df['Transfer Value'] <= value * 1.3]
+    if wage != 'No Limit':
+        df = df[df['Wage'] <= wage]
+    if value != 'No Limit':
+        df = df[df['Transfer Value'] <= value * 1.3]
     df = df[df['Position'] == position]
     if nat != 'All':
         df = df[df['Nat'] == nat]
     after_filter_uids = df.UID
-    print(after_filter_uids)
     after_filter_scores = scores[scores['UID'].isin(after_filter_uids)]
     after_filter_position_scores = pos[pos['UID'].isin(after_filter_uids)]
     final_df = pd.DataFrame({'UID': after_filter_uids.values,
@@ -27,7 +28,6 @@ def finder(age, wage, value, position, role, nat, fm, pos, scores):
                              'Role Score': after_filter_scores[role],
                              'Final Score': (after_filter_scores[role]*0.7) + (after_filter_position_scores[position]*0.3)})
     final_df = final_df.sort_values(by='Final Score', ascending=False)
-    print(final_df.head())
     return final_df
 
 

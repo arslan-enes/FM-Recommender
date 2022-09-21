@@ -274,7 +274,7 @@ AMRL = ['Inverted Winger (Support)', 'Inverted Winger (Attack)',
 
 SC = ['Complete Forward (Attack)', "Complete Forward (Support)",
 'Target Forward (Support)', 'Target Forward (Attack)',
-'Pressing Forward (Defend)', 'Pressing Forward (Support)', 'Pressing Forward (Attack)'
+'Pressing Forward (Defend)', 'Pressing Forward (Support)', 'Pressing Forward (Attack)',
 'Deep Lying Forward (Support)', 'Deep Lying Forward (Attack)',
 'Poacher (Attack)',
 'Advanced Forward (Attack)',

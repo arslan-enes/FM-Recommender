@@ -64,3 +64,16 @@ def compareplayer_line(df, uid_list, pos_list):
     )
 
     return fig
+
+
+def short_list_table(df):
+    fig = go.Figure(data=[go.Table(
+        header=dict(values=list(df.columns),
+                    fill_color='paleturquoise',
+                    align='center'),
+        cells=dict(values=df.values.T,
+                   fill_color='lavender',
+                   align='center'))
+    ])
+
+    return fig
