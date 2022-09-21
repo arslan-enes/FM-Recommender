@@ -31,6 +31,20 @@ def finder(age, wage, value, position, role, nat, fm, pos, scores):
     return final_df
 
 
+def manager_check(player_club, selected_manager, managers):
+    try:
+        manager = managers[managers['Name'] == selected_manager]
+        manager_style = manager['Tactical Style'].values[0]
+        player_style = managers[managers['Club'] == player_club]['Tactical Style'].values[0]
+        if manager_style == player_style:
+            return True
+        else:
+            return False
+
+    except:
+        return False
+
+
 if __name__ == '__main__':
     selected_nat = int(input('Enter maxiumum age limit: '))
     max_wage = int(input('Enter maximum wage you can offer: '))
