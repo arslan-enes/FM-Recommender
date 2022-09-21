@@ -75,5 +75,12 @@ def short_list_table(df):
                    fill_color='lavender',
                    align='center'))
     ])
+    fig.update_layout(
+        width=800,
+        height=1000,
+        font=dict(
+            size=15
+        )
+    )
 
     return fig

@@ -151,12 +151,6 @@ def main():
       <td>{player_all['Nat'].values[0]}</td>
     </tr>
     <tr>
-      <th>Height (cm)</th>
-      <td>{player_all['Height'].values[0].split()[0]}</td>
-      <th>Weight (kg)</th>
-      <td>{player_all['Weight'].values[0].split()[0]}</td>
-    </tr>
-    <tr>
       <th>Foot</th>
       <td>{player_all['Preferred Foot'].values[0]}</td>
       <th>Score</th>
@@ -173,8 +167,8 @@ def main():
                                                      'Injury State': player_all['Rc Injury'].values[0],
                                                      'Position': player_all['Position'].values[0],
                                                      'Role': selected_role,
-                                                     'Value': player_all['Transfer Value'].values[0],
-                                                     'Wage': player_all['Wage'].values[0],
+                                                     'Value': "€{:,}".format(int(player_all['Transfer Value'].values[0])),
+                                                     'Wage': "€{:,} (p/y)".format(int(player_all['Wage'].values[0])),
                                                      'Score': round(result[1]['Final Score'], 2)}, index=[0])
 
                 cols[num].button('Add to Shortlist',
