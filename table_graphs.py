@@ -1,4 +1,3 @@
-from IPython.display import HTML
 
 def foot_condition(v):
     if v == 1:
