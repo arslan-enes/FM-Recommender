@@ -65,7 +65,6 @@ def local_js(file_name):
     with open(file_name) as f:
         st.markdown(f'<script>{f.read()}</script>', unsafe_allow_html=True)
 
-print(f"session_state['shortlist'] = {st.session_state['shortlist']}")
 
 def add_to_shortlist(df, col):
     st.session_state['results'] = True
@@ -77,8 +76,6 @@ def add_to_shortlist(df, col):
 
 def main():
     local_css("style.css")
-
-
     pos, fm, scores, managers = get_data()
     input_container = st.sidebar.container()
     tab1, tab2, tab3, tab4 = st.tabs(["Recommender", "Analysis", "Shortlist", "About"])
@@ -215,16 +212,20 @@ def main():
                                 background-color: #D3FFCA;
                                 background-size: cover;
                                 }
-                                </style>""", unsafe_allow_html=True)
+                                </style>""",  unsafe_allow_html=True)
                 st.session_state['results'] = False
-
-        col1, col2 = tab2.columns(2)
+        # Analysis
+        col1, col2, col3 = tab2.columns([1, 2, 1])
         if results_df.shape[0] == 5:
-            col1.plotly_chart(compareplayer(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
-            col2.plotly_chart(compareplayer_line(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
+            config = {'displayModeBar': False}
+            col2.plotly_chart(compareplayer(fm, results_df.UID.values, role_atts_dict[selected_role]['key']),
+                              use_container_width=True, config=config)
+            # col2.plotly_chart(compareplayer_line(fm, results_df.UID.values, role_atts_dict[selected_role]['key']), use_container_width=True)
             foot = foot_table(fm, results_df.UID.values)
-            tab2.dataframe(foot)
-            tab2.dataframe(injury_table(fm, results_df.UID.values))
+            col1.header('Foot Information')
+            col1.dataframe(foot)
+            col3.header('Injury Status')
+            col3.dataframe(injury_table(fm, results_df.UID.values))
         else:
             tab2.write('Not enough players to compare')
 

@@ -3,8 +3,8 @@ from plotly.subplots import make_subplots
 import datetime
 import numpy as np
 
-def compareplayer(df, uid_list, pos_list):
 
+def compareplayer(df, uid_list, pos_list):
     names = []
     fig = go.Figure()
     for uid in uid_list:
@@ -18,16 +18,15 @@ def compareplayer(df, uid_list, pos_list):
         names.append(player['Name'].values[0])
 
     fig.update_layout(
-        autosize=False,
-        width=1000,
-        height=650,
+        height=600,
         polar=dict(
             radialaxis=dict(
                 visible=True,
                 range=[0, 20]
             )),
-        showlegend=True,
-        title=f"{names[0]} vs {names[1]} vs {names[2]} vs {names[3]} vs {names[4]}"
+        title='<span style="font-size: 32px;">Attributes Comparison</span>',
+        title_x=0.5,
+        showlegend=True
     )
 
     return fig
@@ -84,3 +83,5 @@ def short_list_table(df):
     )
 
     return fig
+
+
