@@ -15,6 +15,23 @@ def blank_space(col, number_of_spaces):
         col.markdown('')
 
 
+def inject_javascript():
+    components.html("""
+        <script>
+        document.onreadystatechange = () => {
+
+        if (document.readyState === 'complete') {
+        const doc = window.parent.document;
+        doc.querySelector('.css-1qrvfrg').addEventListener('click', function() {
+            doc.querySelectorAll('.css-9s5bis')[1].click(); // same behavior as doc.querySelector('[role="combobox"]').click()
+        });
+  }
+};
+        
+        </script>
+        """, height=0, width=0)
+
+
 if 'start_page' not in st.session_state:
     st.session_state['start_page'] = True
 
@@ -60,8 +77,6 @@ def add_to_shortlist(df, col):
 
 def main():
     local_css("style.css")
-    # local_js("jscript.js")
-
 
 
     pos, fm, scores, managers = get_data()
@@ -233,15 +248,9 @@ def main():
         col1.metric(label='Roles',value=(len(pos_json()['GK'])+ len(pos_json()['DEF'])+ len(pos_json()['MID'])+ len(pos_json()['FW'])))
         col2.dataframe(fm.sort_values('Transfer Value',ascending=False).iloc[1:10,][['Name','Club','Transfer Value']])
 
-    components.html("""
-    <script>
-    const doc = window.parent.document;
-    doc.querySelector('.css-1qrvfrg').addEventListener('click', function() {
-        doc.querySelectorAll('.css-9s5bis')[1].click(); // same behavior as doc.querySelector('[role="combobox"]').click()
-    });
-    </script>
-    """, height=0, width=0)
+
 
 
 if __name__ == '__main__':
     main()
+    inject_javascript()
