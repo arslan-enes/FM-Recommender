@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import json
 import base64
@@ -231,6 +232,16 @@ def main():
         col1.metric(label='Attributes', value=(fm.shape[1]))
         col1.metric(label='Roles',value=(len(pos_json()['GK'])+ len(pos_json()['DEF'])+ len(pos_json()['MID'])+ len(pos_json()['FW'])))
         col2.dataframe(fm.sort_values('Transfer Value',ascending=False).iloc[1:10,][['Name','Club','Transfer Value']])
+
+    components.html("""
+    <script>
+    const doc = window.parent.document;
+    doc.querySelector('.css-1qrvfrg').addEventListener('click', function() {
+        doc.querySelectorAll('.css-9s5bis')[1].click(); // same behavior as doc.querySelector('[role="combobox"]').click()
+    });
+    </script>
+    """, height=0, width=0)
+
 
 if __name__ == '__main__':
     main()
