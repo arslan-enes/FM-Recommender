@@ -10,8 +10,17 @@ body {
 /*.css-18ni7ap{*/
 /*    display: none;*/
 /*}*/
+.css-6kekos{
+    width: inherit;
+}
 
 .css-1qrvfrg {
+    color: #4F8BF9;
+    background-color: #fff;
+    width: inherit;
+}
+
+.css-1prua9e {
     color: #4F8BF9;
     background-color: #fff;
     width: inherit;
