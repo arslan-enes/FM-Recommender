@@ -231,7 +231,6 @@ def main():
 
     tab3.plotly_chart(short_list_table(st.session_state['shortlist']), use_container_width=True)
 
-
     if st.session_state['start_page']:
         start_cont = tab1.container()
         start_cont.title('Welcome to the Football Manager Player Recommender ⚽')
@@ -248,10 +247,8 @@ def main():
         col1.metric(label='Attributes', value=(fm.shape[1]))
         col1.metric(label='Roles',value=(len(pos_json()['GK'])+ len(pos_json()['DEF'])+ len(pos_json()['MID'])+ len(pos_json()['FW'])))
         col2.dataframe(fm.sort_values('Transfer Value',ascending=False).iloc[1:10,][['Name','Club','Transfer Value']])
-
-
+        inject_javascript()
 
 
 if __name__ == '__main__':
     main()
-    inject_javascript()

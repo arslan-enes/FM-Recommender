@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+body {
+    font-family: 'Muli', sans-serif;
+    background: #ddd;
+}
+/*.stMarkdown{*/
+/*    opacity: 90%;*/
+/*}*/
+
+/*.css-18ni7ap{*/
+/*    display: none;*/
+/*}*/
+
 .css-1qrvfrg {
     color: #4F8BF9;
     background-color: #fff;
@@ -20,18 +33,6 @@
     padding-top: 0rem;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
-body {
-    font-family: 'Muli', sans-serif;
-    background: #ddd;
-}
-/*.stMarkdown{*/
-/*    opacity: 90%;*/
-/*}*/
-
-/*.css-18ni7ap{*/
-/*    display: none;*/
-/*}*/
 
 .shell {
     padding: 80px 0;
