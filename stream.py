@@ -63,7 +63,7 @@ def local_css(file_name):
 
 def local_js(file_name):
     with open(file_name) as f:
-        st.markdown(f'<script>{f.read()}</script>', unsafe_allow_html=True)
+        components.html(f'<script>{f.read()}</script>', height=0, width=0)
 
 
 def add_to_shortlist(df, col):
@@ -247,8 +247,9 @@ def main():
         col1.metric(label='Attributes', value=(fm.shape[1]))
         col1.metric(label='Roles',value=(len(pos_json()['GK'])+ len(pos_json()['DEF'])+ len(pos_json()['MID'])+ len(pos_json()['FW'])))
         col2.dataframe(fm.sort_values('Transfer Value',ascending=False).iloc[1:10,][['Name','Club','Transfer Value']])
-        inject_javascript()
 
 
 if __name__ == '__main__':
     main()
+    local_js("script.js")
+
