@@ -260,8 +260,8 @@ AMC = ['Attacking Midfielder (Support)', 'Attacking Midfielder (Attack)',
 
 MRL = ['Inverted Winger (Support)', 'Inverted Winger (Attack)',
 'Wide Playmaker (Support)', 'Wide Playmaker (Attack)',
-'Wide Midfielder (Defend)', 'Wide Midfielder (Support)', 'Wide Midfielder (Attack)'
-'Defensive Winger (Defend)', 'Defensive Winger (Support)'
+'Wide Midfielder (Defend)', 'Wide Midfielder (Support)', 'Wide Midfielder (Attack)',
+'Defensive Winger (Defend)', 'Defensive Winger (Support)',
 'Winger (Support)', 'Winger (Attack)']
 
 AMRL = ['Inverted Winger (Support)', 'Inverted Winger (Attack)',
