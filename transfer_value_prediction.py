@@ -13,17 +13,15 @@ pd.set_option('display.width', 500)
 
 df = pd.read_csv('son_model_df.csv')
 
-leagues = ['France (Ligue 1)', 'England (Premier League)', 'Spain (LaLiga)', 'Italy (Serie A)', 'Germany (Bundesliga)']
-new_df = df[df['Based'].isin(leagues)]
-new_df = new_df[~(new_df['Transfer Value'] == 0)]
 drop_cols = ['Name',	'Nat',	'Based',	'Club', 'Yth Apps', 'Preferred Foot',	'Right Foot',	'Left Foot',	'Height',	'Weight', 'Wage', 'Role','GK', 'DRL',	'DC',	'WBRL', 'DM', 'MRL', 'MC',	'AMRL',	'AMC']
-new_df = new_df.drop(drop_cols, axis=1)
+
 att_22 = ['Agg', 'Jum', 'Pun', 'Nat .1', 'Vis', 'L Th', 'Lon', 'OtB', 'Tck', 'Tec', 'Tea', 'Cmp', 'Fre', 'Ref', 'Pos', 'Pen', 'Pas',
           'Fla', 'Ant', 'Cro', 'Mar', 'Ldr', 'Cor', 'Cnt', 'Det', 'Dec', 'Hea', 'Fir', 'Com', 'Acc', 'Pac', 'Aer', 'Str', 'Thr', 'Han',
           'Ecc', 'Dri', 'Bal', 'Kic', 'Sta', 'Agi', 'Wor', 'Bra', 'Cmd', 'Fin', '1v1', 'TRO']
+
 att_21 = [col + '_21' for col in att_22]
 att_20 = [col + '_20' for col in att_22]
-new_df = new_df.drop(att_21 + att_20, axis=1)
+
 non_player = ['Pun', 'Ref', 'Com', 'Aer', 'Thr', 'Han', 'Ecc', 'Kic', 'Cmd', '1v1', 'TRO']
 non_gk = ['L Th', 'Lon', 'Tck', 'Cro', 'Mar', 'Cor', 'Hea', 'Dri', 'Fin']
 
