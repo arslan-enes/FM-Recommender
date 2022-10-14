@@ -213,7 +213,7 @@
         "Bra"
       ]
     },
-    "Wide Center-Back (Defend)": {
+    "Wide Centre-Back (Defend)": {
       "key": [
         "Jum",
         "Tck",
@@ -236,7 +236,7 @@
         "Bra"
       ]
     },
-    "Wide Center-Back (Support)": {
+    "Wide Centre-Back (Support)": {
       "key": [
         "Jum",
         "Tck",
@@ -260,7 +260,7 @@
         "Bra"
       ]
     },
-    "Wide Center-Back (Attack)": {
+    "Wide Centre-Back (Attack)": {
       "key": [
         "Jum",
         "OtB",
@@ -892,7 +892,7 @@
         "Str"
       ]
     },
-    "Carillero (Support)": {
+    "Carrilero (Support)": {
       "key": [
         "Fir",
         "Pas",
@@ -1041,6 +1041,52 @@
         "Wor",
         "Sta",
         "Str"
+      ]
+    },
+    "Defensive Winger (Defend)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Pos",
+        "Ant",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Agg",
+        "Tck",
+        "Cro",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri"
+      ]
+    },
+    "Defensive Winger (Support)": {
+      "key": [
+        "OtB",
+        "Tec",
+        "Tea",
+        "Cro",
+        "Sta",
+        "Wor"
+      ],
+      "preferred": [
+        "Agg",
+        "Tck",
+        "Cmp",
+        "Pos",
+        "Pas",
+        "Ant",
+        "Mar",
+        "Cnt",
+        "Dec",
+        "Fir",
+        "Acc",
+        "Dri"
       ]
     },
     "Enganche (Support)": {
